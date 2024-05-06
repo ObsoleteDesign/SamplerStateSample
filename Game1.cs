@@ -49,7 +49,7 @@ namespace SamplerStateSample
 
             // TODO: Add your drawing code here
 
-            //Default effect of SpriteBach will use PointClamp so any UV coords beyond 0-1 will clamp to last pixel on that 'edge'
+            //Default effect of SpriteBach will use LinearClamp so any UV coords beyond 0-1 will clamp to last pixel on that 'edge'
             _spriteBatch.Begin();
             _spriteBatch.Draw(mandelbrot, new Rectangle(64, 64, mandelbrot.Width * 2, mandelbrot.Height * 2),
                 new Rectangle(0, 0, mandelbrot.Width * 2, mandelbrot.Height * 2), Color.White);
